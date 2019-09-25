@@ -1,0 +1,64 @@
+.more-tickets{
+	position: relative;
+	background: #030101;
+	z-index: 3;
+	.container{
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 60px;
+		text-align: center;
+	}
+	.hat{
+		position: absolute;
+		left: -371px;
+    	top: -95px;
+    	@media screen and (max-width: 880px){
+			transform: scale(0.7, 0.7);
+			top: -211px;
+			left: -275px;
+		}
+		@media screen and (max-width: 576px){
+			transform: scale(0.5, 0.5);
+		}
+	}
+	a{
+		position: relative;
+		color: #f5f5f5;
+		font: 80px $WBB;
+		z-index: 2;
+		@media screen and (max-width: 576px){
+			font-size: 60px;
+		}
+		&:after{
+			position: absolute;
+			content: url(../img/spot3.png);
+			z-index: -2;
+			top: -134%;
+    		left: -51px;
+    		@media screen and (max-width: 576px){
+				transform: scale(0.8, 0.8);
+				top: -192%;
+    			left: -86px;
+    		}
+		}
+		&:before{
+			position: absolute;
+			content: "";
+			box-shadow: 0 50px 70px 70px #620f28;
+			left: 26%;
+			top: 0;
+			width: 46%;
+			z-index: -1;
+			opacity: 0;
+			transition: opacity 0.3s;
+			@media screen and (max-width: 576px){
+				transform: scale(0.8, 0.8);
+			}
+		}
+		&:hover:before{
+			opacity: 1;
+		}
+	}
+
+}
+

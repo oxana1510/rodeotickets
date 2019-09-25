@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "WesternBangBang-R";
+    display: swap;
+    src: url("../fonts/WesternBangBang-R.eot");
+    src: url("../fonts/WesternBangBang-R.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/WesternBangBang-R.woff2") format("woff2"),
+        url("../fonts/WesternBangBang-R.woff") format("woff"),
+        url("../fonts/WesternBangBang-R.ttf") format("truetype"),
+        url("../fonts/WesternBangBang-R.svg#Western Bang Bang") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Myriad Pro Condensed";
+    display: swap;
+    src: local("Myriad Pro Condensed Regular"), local("Myriad-Pro-Condensed-Regular"),
+        url("../fonts/MyriadPro-Cond.woff2") format("woff2"),
+        url("../fonts/MyriadPro-Cond.woff") format("woff"),
+        url("../fonts/MyriadPro-Cond.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CowboyCadaver";
+    display: swap;
+    src: url("../fonts/CowboyCadaver.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+$WBB: "WesternBangBang-R", sans-serif;
+$MC: "Myriad Pro Condensed", sans-serif;
+$CC: "CowboyCadaver", sans-serif;
